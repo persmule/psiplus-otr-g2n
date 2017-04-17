@@ -23,7 +23,7 @@ g2n() {
 }
 
 getguid() {
-    grep name "${1}" | sed -e 's/^(name \"//g' -e 's/\")$//g';
+    grep -o '{.*}' "${1}";
 }
 
 mkregex() {
