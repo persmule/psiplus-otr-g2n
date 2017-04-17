@@ -27,7 +27,7 @@ getguid() {
 }
 
 mkregex() {
-    printf 's/%s/%s/g' ${1} $(g2n ${1} "${2}");
+    printf 's/%s/%s\//g' ${1} $(g2n ${1} "${2}");
 }
 
 if [ ${#} -lt 2 ]; then
