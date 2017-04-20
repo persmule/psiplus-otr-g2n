@@ -31,7 +31,7 @@ mkregex() {
 }
 
 if [ ${#} -lt 2 ]; then
-   echo "usage: ${0} <psi+ otr key file> <account xml file> <converted key file>"
+   echo "usage: ${0} <psi+ otr file> <account xml file> <converted otr file>"
    exit 0
 elif which xmlstarlet > /dev/null; then
     l_guid=$(getguid "${1}");
